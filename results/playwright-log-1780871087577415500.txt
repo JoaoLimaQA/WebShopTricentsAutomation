@@ -1,0 +1,46 @@
+{"level":30,"time":"2026-06-07T22:24:49.349Z","pid":1752,"hostname":"JoaoPSLima","msg":"Listening on 127.0.0.1:56094"}
+{"level":30,"time":"2026-06-07T22:24:49.384Z","pid":1752,"hostname":"JoaoPSLima","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-06-07T22:24:49.828Z","pid":1752,"hostname":"JoaoPSLima","msg":"Adding browser to stack: chromium, version: 143.0.7499.4"}
+{"level":30,"time":"2026-06-07T22:24:49.828Z","pid":1752,"hostname":"JoaoPSLima","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-06-07T22:24:49.829Z","pid":1752,"hostname":"JoaoPSLima","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-06-07T22:24:49.841Z","pid":1752,"hostname":"JoaoPSLima","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-06-07T22:24:49.841Z","pid":1752,"hostname":"JoaoPSLima","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@cb59e1e474d9892dfa41c9c747189abc\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=934718e6-0fb3-418d-9c98-964fc7107be0\"}"}
+{"level":30,"time":"2026-06-07T22:24:49.867Z","pid":1752,"hostname":"JoaoPSLima","msg":"Setting default timeout for context context=8f1bfe2e-040d-4d04-8136-cfe0c1d40f21 to 10000"}
+{"level":30,"time":"2026-06-07T22:24:49.867Z","pid":1752,"hostname":"JoaoPSLima","msg":"Changed active context: context=8f1bfe2e-040d-4d04-8136-cfe0c1d40f21"}
+{"level":30,"time":"2026-06-07T22:24:50.516Z","pid":1752,"hostname":"JoaoPSLima","msg":"Video path: undefined"}
+{"level":30,"time":"2026-06-07T22:24:50.551Z","pid":1752,"hostname":"JoaoPSLima","msg":"Changed active page"}
+{"level":30,"time":"2026-06-07T22:24:53.971Z","pid":1752,"hostname":"JoaoPSLima","msg":"End of node method newPage"}
+{"level":30,"time":"2026-06-07T22:24:53.985Z","pid":1752,"hostname":"JoaoPSLima","msg":"Start of node method click"}
+{"level":30,"time":"2026-06-07T22:24:53.985Z","pid":1752,"hostname":"JoaoPSLima","msg":"Strict mode is enabled, find Locator with //a[contains(text(),\"Register\")] in page."}
+{"level":30,"time":"2026-06-07T22:24:54.518Z","pid":1752,"hostname":"JoaoPSLima","msg":"End of node method click"}
+{"level":30,"time":"2026-06-07T22:24:54.541Z","pid":1752,"hostname":"JoaoPSLima","msg":"Start of node method click"}
+{"level":30,"time":"2026-06-07T22:24:54.541Z","pid":1752,"hostname":"JoaoPSLima","msg":"Strict mode is enabled, find Locator with //input[@id=\"gender-female\"] in page."}
+{"level":30,"time":"2026-06-07T22:24:54.610Z","pid":1752,"hostname":"JoaoPSLima","msg":"End of node method click"}
+{"level":30,"time":"2026-06-07T22:24:54.618Z","pid":1752,"hostname":"JoaoPSLima","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-06-07T22:24:54.619Z","pid":1752,"hostname":"JoaoPSLima","msg":"Strict mode is enabled, find Locator with //input[@id=\"FirstName\"] in page."}
+{"level":30,"time":"2026-06-07T22:24:54.644Z","pid":1752,"hostname":"JoaoPSLima","msg":"End of node method fillText"}
+{"level":30,"time":"2026-06-07T22:24:54.652Z","pid":1752,"hostname":"JoaoPSLima","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-06-07T22:24:54.652Z","pid":1752,"hostname":"JoaoPSLima","msg":"Strict mode is enabled, find Locator with //input[@id=\"LastName\"] in page."}
+{"level":30,"time":"2026-06-07T22:24:54.678Z","pid":1752,"hostname":"JoaoPSLima","msg":"End of node method fillText"}
+{"level":30,"time":"2026-06-07T22:24:54.684Z","pid":1752,"hostname":"JoaoPSLima","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-06-07T22:24:54.684Z","pid":1752,"hostname":"JoaoPSLima","msg":"Strict mode is enabled, find Locator with //input[@id=\"Email\"] in page."}
+{"level":30,"time":"2026-06-07T22:24:54.718Z","pid":1752,"hostname":"JoaoPSLima","msg":"End of node method fillText"}
+{"level":30,"time":"2026-06-07T22:24:54.924Z","pid":1752,"hostname":"JoaoPSLima","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2026-06-07T22:24:54.924Z","pid":1752,"hostname":"JoaoPSLima","Take screenshot with options: ":{"path":"C:\\Users\\joaop\\OneDrive\\Documents\\ShopAutomation\\results\\browser\\screenshot\\robotframework-browser-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2026-06-07T22:24:55.380Z","pid":1752,"hostname":"JoaoPSLima","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2026-06-07T22:24:55.412Z","pid":1752,"hostname":"JoaoPSLima","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-06-07T22:24:55.416Z","pid":1752,"hostname":"JoaoPSLima","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-06-07T22:24:55.425Z","pid":1752,"hostname":"JoaoPSLima","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-06-07T22:24:55.430Z","pid":1752,"hostname":"JoaoPSLima","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-06-07T22:24:55.433Z","pid":1752,"hostname":"JoaoPSLima","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-06-07T22:24:55.435Z","pid":1752,"hostname":"JoaoPSLima","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-06-07T22:24:55.442Z","pid":1752,"hostname":"JoaoPSLima","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-06-07T22:24:55.444Z","pid":1752,"hostname":"JoaoPSLima","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-06-07T22:24:55.448Z","pid":1752,"hostname":"JoaoPSLima","msg":"Changed active context: context=8f1bfe2e-040d-4d04-8136-cfe0c1d40f21"}
+{"level":30,"time":"2026-06-07T22:24:55.448Z","pid":1752,"hostname":"JoaoPSLima","msg":"Changing current active page: page=08f2d832-f146-4b1b-802a-edde89833617"}
+{"level":30,"time":"2026-06-07T22:24:55.448Z","pid":1752,"hostname":"JoaoPSLima","msg":"Changed active page"}
+{"level":30,"time":"2026-06-07T22:24:55.454Z","pid":1752,"hostname":"JoaoPSLima","msg":"Start of node method closeContext"}
+{"level":30,"time":"2026-06-07T22:24:55.467Z","pid":1752,"hostname":"JoaoPSLima","msg":"Removed page=238654d5-68ed-4f0b-b709-a0e8e163ba6d from context=8f1bfe2e-040d-4d04-8136-cfe0c1d40f21 page stack"}
+{"level":30,"time":"2026-06-07T22:24:55.478Z","pid":1752,"hostname":"JoaoPSLima","msg":"End of node method closeContext"}
+{"level":30,"time":"2026-06-07T22:24:55.594Z","pid":1752,"hostname":"JoaoPSLima","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-06-07T22:24:55.595Z","pid":1752,"hostname":"JoaoPSLima","msg":"End of node method getBrowserCatalog"}

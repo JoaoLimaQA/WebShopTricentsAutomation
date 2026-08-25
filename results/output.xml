@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4 (Python 3.12.3 on win32)" generated="2026-06-07T19:54:48.099190" rpa="false" schemaversion="5">
+<suite id="s1" name="ShopAutomation" source="C:\Users\joaop\OneDrive\Documents\ShopAutomation">
+<suite id="s1-s1" name="Tests" source="C:\Users\joaop\OneDrive\Documents\ShopAutomation\Tests">
+<suite id="s1-s1-s1" name="Cadastro" source="C:\Users\joaop\OneDrive\Documents\ShopAutomation\Tests\Cadastro">
+<suite id="s1-s1-s1-s1" name="Cadastro Novos Users" source="C:\Users\joaop\OneDrive\Documents\ShopAutomation\Tests\Cadastro\Cadastro_Novos_Users.robot">
+<test id="s1-s1-s1-s1-t1" name="CD01 - Cadastrar Novos Usuarios" line="9">
+<kw name="Iniciar Sessão" owner="Base" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-06-07T19:54:48.690719" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\joaop\\OneDrive\\Documents\\ShopAutomation\\results\\browser\\traces\\temp\\29ecbb18-edfd-4282-82de-daacd22e3ac3"}</msg>
+<msg time="2026-06-07T19:54:48.726780" level="INFO">Starting Browser process C:\Python312\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:50228</msg>
+<msg time="2026-06-07T19:54:50.076474" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\joaop\\OneDrive\\Documents\\ShopAutomation\\results\\browser\\traces\\temp\\29ecbb18-edfd-4282-82de-daacd22e3ac3"}</msg>
+<arg>browser=chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-06-07T19:54:48.690719" elapsed="1.386763"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-06-07T19:54:54.048788" level="INFO">Successfully initialized new page object and opened url: https://demowebshop.tricentis.com/</msg>
+<msg time="2026-06-07T19:54:54.049789" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>https://demowebshop.tricentis.com/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-06-07T19:54:50.077482" elapsed="3.972307"/>
+</kw>
+<status status="PASS" start="2026-06-07T19:54:48.688694" elapsed="5.362096"/>
+</kw>
+<kw name="Get Fake Data" owner="Gerador_dados">
+<msg time="2026-06-07T19:54:54.054307" level="INFO">${dados} = {'first_name': 'Kamilly Cassiano', 'last_name': 'Ribeiro', 'email': 'salesyuri@example.com', 'senha': Secret(value=&lt;secret&gt;)}</msg>
+<var>${dados}</var>
+<status status="PASS" start="2026-06-07T19:54:54.053296" elapsed="0.001011"/>
+</kw>
+<kw name="Clicar em Registrar" owner="Cadastrar_Novos_Users">
+<kw name="Click" owner="Browser">
+<msg time="2026-06-07T19:54:54.057824" level="INFO">Clicks the element '//a[contains(text(),"Register")]'.</msg>
+<arg>${tela_cadastro.button_registrar}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-06-07T19:54:54.056821" elapsed="0.546388"/>
+</kw>
+<status status="PASS" start="2026-06-07T19:54:54.055814" elapsed="0.547395"/>
+</kw>
+<kw name="Inserir dados pessoais" owner="Cadastrar_Novos_Users">
+<if>
+<branch type="IF" condition="'${genero}' == 'Masculino'">
+<kw name="Click" owner="Browser">
+<arg>${tela_cadastro.input_male}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-06-07T19:54:54.607738" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-06-07T19:54:54.606734" elapsed="0.001004"/>
+</branch>
+<branch type="ELSE IF" condition="'${genero}' == 'Feminino'">
+<kw name="Click" owner="Browser">
+<msg time="2026-06-07T19:54:54.609749" level="INFO">Clicks the element '//input[@id="gender-female"]'.</msg>
+<arg>${tela_cadastro.input_female}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-06-07T19:54:54.608748" elapsed="0.085542"/>
+</kw>
+<status status="PASS" start="2026-06-07T19:54:54.607738" elapsed="0.086552"/>
+</branch>
+<branch type="ELSE">
+<kw name="Set Variable" owner="BuiltIn">
+<var>${mensagem_erro}</var>
+<arg>ERRO: O valor "${genero}" é inválido! Valores permitidos: 'Masculino' para Male ou 'Feminino' para Famale.</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2026-06-07T19:54:54.694290" elapsed="0.001504"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>${mensagem_erro}</arg>
+<arg>level=ERROR</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-06-07T19:54:54.695794" elapsed="0.000000"/>
+</kw>
+<kw name="Fail" owner="BuiltIn">
+<arg>${mensagem_erro}</arg>
+<doc>Fails the test with the given message and optionally alters its tags.</doc>
+<status status="NOT RUN" start="2026-06-07T19:54:54.695794" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-06-07T19:54:54.694290" elapsed="0.001504"/>
+</branch>
+<status status="PASS" start="2026-06-07T19:54:54.606734" elapsed="0.090067"/>
+</if>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-06-07T19:54:54.696801" level="INFO">Fills the text 'Kamilly Cassiano' in the given field.</msg>
+<arg>${tela_cadastro.input_first_name}</arg>
+<arg>${nome}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-06-07T19:54:54.696801" elapsed="0.024064"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-06-07T19:54:54.722864" level="INFO">Fills the text 'Ribeiro' in the given field.</msg>
+<arg>${tela_cadastro.input_last_name}</arg>
+<arg>${sobrenome}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-06-07T19:54:54.720865" elapsed="0.034123"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-06-07T19:54:54.756496" level="INFO">Fills the text 'salesyuri@example.com' in the given field.</msg>
+<arg>${tela_cadastro.input_email}</arg>
+<arg>${email}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-06-07T19:54:54.754988" elapsed="0.023809"/>
+</kw>
+<arg>Feminino</arg>
+<arg>${dados}[first_name]</arg>
+<arg>${dados}[last_name]</arg>
+<arg>${dados}[email]</arg>
+<status status="PASS" start="2026-06-07T19:54:54.605725" elapsed="0.174068"/>
+</kw>
+<kw name="Criar senha" owner="Cadastrar_Novos_Users">
+<kw name="Fill Secret" owner="Browser">
+<arg>${tela_cadastro.input_senha}</arg>
+<arg>$senha</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Fills the given secret from ``variable_name`` into the
+text field found by ``selector``.</doc>
+<status status="PASS" start="2026-06-07T19:54:54.782020" elapsed="0.029851"/>
+</kw>
+<kw name="Fill Secret" owner="Browser">
+<arg>${tela_cadastro.input_conf_senha}</arg>
+<arg>$senha</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Fills the given secret from ``variable_name`` into the
+text field found by ``selector``.</doc>
+<status status="PASS" start="2026-06-07T19:54:54.812880" elapsed="0.024584"/>
+</kw>
+<arg>$dados[senha]</arg>
+<status status="PASS" start="2026-06-07T19:54:54.779793" elapsed="0.057671"/>
+</kw>
+<kw name="Take Screenshot" owner="Browser" type="TEARDOWN">
+<msg time="2026-06-07T19:54:55.099264" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2026-06-07T19:54:54.838465" elapsed="0.261799"/>
+</kw>
+<msg time="2026-06-07T19:54:55.132894" level="INFO">Switching context to context=96c114d6-b7fa-49fc-99fb-4387bbf3eb6e in CURRENT</msg>
+<msg time="2026-06-07T19:54:55.149471" level="INFO">Successfully changed active context: context=96c114d6-b7fa-49fc-99fb-4387bbf3eb6e</msg>
+<msg time="2026-06-07T19:54:55.178892" level="INFO">Successfully closed Context</msg>
+<status status="PASS" start="2026-06-07T19:54:48.675780" elapsed="6.425485"/>
+</test>
+<status status="PASS" start="2026-06-07T19:54:48.193149" elapsed="7.026766"/>
+</suite>
+<status status="PASS" start="2026-06-07T19:54:48.181611" elapsed="7.164140"/>
+</suite>
+<status status="PASS" start="2026-06-07T19:54:48.166057" elapsed="7.347144"/>
+</suite>
+<status status="PASS" start="2026-06-07T19:54:48.107230" elapsed="7.422897"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="ShopAutomation" id="s1" pass="1" fail="0" skip="0">ShopAutomation</stat>
+<stat name="Tests" id="s1-s1" pass="1" fail="0" skip="0">ShopAutomation.Tests</stat>
+<stat name="Cadastro" id="s1-s1-s1" pass="1" fail="0" skip="0">ShopAutomation.Tests.Cadastro</stat>
+<stat name="Cadastro Novos Users" id="s1-s1-s1-s1" pass="1" fail="0" skip="0">ShopAutomation.Tests.Cadastro.Cadastro Novos Users</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

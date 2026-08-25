@@ -1,0 +1,31 @@
+{"level":30,"time":"2026-06-07T22:02:11.945Z","pid":11884,"hostname":"JoaoPSLima","msg":"Listening on 127.0.0.1:50368"}
+{"level":30,"time":"2026-06-07T22:02:12.339Z","pid":11884,"hostname":"JoaoPSLima","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-06-07T22:02:13.495Z","pid":11884,"hostname":"JoaoPSLima","msg":"Adding browser to stack: chromium, version: 143.0.7499.4"}
+{"level":30,"time":"2026-06-07T22:02:13.496Z","pid":11884,"hostname":"JoaoPSLima","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-06-07T22:02:13.497Z","pid":11884,"hostname":"JoaoPSLima","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-06-07T22:02:13.506Z","pid":11884,"hostname":"JoaoPSLima","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-06-07T22:02:13.507Z","pid":11884,"hostname":"JoaoPSLima","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@d25e49e41743cf75735aa3f848737e00\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=0273501e-d7a8-48ff-b4ba-db13cf61a39c\"}"}
+{"level":30,"time":"2026-06-07T22:02:13.540Z","pid":11884,"hostname":"JoaoPSLima","msg":"Setting default timeout for context context=f5e4e807-c457-4021-a8fe-666ef030c92e to 10000"}
+{"level":30,"time":"2026-06-07T22:02:13.541Z","pid":11884,"hostname":"JoaoPSLima","msg":"Changed active context: context=f5e4e807-c457-4021-a8fe-666ef030c92e"}
+{"level":30,"time":"2026-06-07T22:02:13.973Z","pid":11884,"hostname":"JoaoPSLima","msg":"Video path: undefined"}
+{"level":30,"time":"2026-06-07T22:02:13.973Z","pid":11884,"hostname":"JoaoPSLima","msg":"Changed active page"}
+{"level":30,"time":"2026-06-07T22:02:17.215Z","pid":11884,"hostname":"JoaoPSLima","msg":"End of node method newPage"}
+{"level":30,"time":"2026-06-07T22:02:17.263Z","pid":11884,"hostname":"JoaoPSLima","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2026-06-07T22:02:17.263Z","pid":11884,"hostname":"JoaoPSLima","Take screenshot with options: ":{"path":"C:\\Users\\joaop\\OneDrive\\Documents\\ShopAutomation\\results\\browser\\screenshot\\robotframework-browser-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2026-06-07T22:02:17.602Z","pid":11884,"hostname":"JoaoPSLima","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2026-06-07T22:02:17.661Z","pid":11884,"hostname":"JoaoPSLima","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-06-07T22:02:17.668Z","pid":11884,"hostname":"JoaoPSLima","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-06-07T22:02:17.672Z","pid":11884,"hostname":"JoaoPSLima","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-06-07T22:02:17.675Z","pid":11884,"hostname":"JoaoPSLima","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-06-07T22:02:17.678Z","pid":11884,"hostname":"JoaoPSLima","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-06-07T22:02:17.686Z","pid":11884,"hostname":"JoaoPSLima","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-06-07T22:02:17.693Z","pid":11884,"hostname":"JoaoPSLima","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-06-07T22:02:17.695Z","pid":11884,"hostname":"JoaoPSLima","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-06-07T22:02:17.702Z","pid":11884,"hostname":"JoaoPSLima","msg":"Changed active context: context=f5e4e807-c457-4021-a8fe-666ef030c92e"}
+{"level":30,"time":"2026-06-07T22:02:17.702Z","pid":11884,"hostname":"JoaoPSLima","msg":"Changing current active page: page=79ef2a32-3ca7-4902-bf1e-a3cf85ba5420"}
+{"level":30,"time":"2026-06-07T22:02:17.702Z","pid":11884,"hostname":"JoaoPSLima","msg":"Changed active page"}
+{"level":30,"time":"2026-06-07T22:02:17.707Z","pid":11884,"hostname":"JoaoPSLima","msg":"Start of node method closeContext"}
+{"level":30,"time":"2026-06-07T22:02:17.722Z","pid":11884,"hostname":"JoaoPSLima","msg":"Removed page=4a532e40-2a3f-45da-b8c3-a8adc2dcfbe3 from context=f5e4e807-c457-4021-a8fe-666ef030c92e page stack"}
+{"level":30,"time":"2026-06-07T22:02:17.729Z","pid":11884,"hostname":"JoaoPSLima","msg":"End of node method closeContext"}
+{"level":30,"time":"2026-06-07T22:02:17.868Z","pid":11884,"hostname":"JoaoPSLima","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-06-07T22:02:17.868Z","pid":11884,"hostname":"JoaoPSLima","msg":"End of node method getBrowserCatalog"}
