@@ -1,167 +1,560 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4 (Python 3.12.3 on win32)" generated="2026-06-07T19:54:48.099190" rpa="false" schemaversion="5">
-<suite id="s1" name="ShopAutomation" source="C:\Users\joaop\OneDrive\Documents\ShopAutomation">
-<suite id="s1-s1" name="Tests" source="C:\Users\joaop\OneDrive\Documents\ShopAutomation\Tests">
-<suite id="s1-s1-s1" name="Cadastro" source="C:\Users\joaop\OneDrive\Documents\ShopAutomation\Tests\Cadastro">
-<suite id="s1-s1-s1-s1" name="Cadastro Novos Users" source="C:\Users\joaop\OneDrive\Documents\ShopAutomation\Tests\Cadastro\Cadastro_Novos_Users.robot">
-<test id="s1-s1-s1-s1-t1" name="CD01 - Cadastrar Novos Usuarios" line="9">
+<robot generator="Robot 7.4.1 (Python 3.12.3 on darwin)" generated="2026-08-28T14:53:07.715622" rpa="false" schemaversion="5">
+<suite id="s1" name="WebShopTricentsAutomation" source="/Users/joaolima/Documents/TA-Tricents/WebShopTricentsAutomation">
+<suite id="s1-s1" name="Tests" source="/Users/joaolima/Documents/TA-Tricents/WebShopTricentsAutomation/Tests">
+<suite id="s1-s1-s1" name="Compras" source="/Users/joaolima/Documents/TA-Tricents/WebShopTricentsAutomation/Tests/Compras">
+<suite id="s1-s1-s1-s1" name="Carrinho" source="/Users/joaolima/Documents/TA-Tricents/WebShopTricentsAutomation/Tests/Compras/Carrinho.robot">
+<test id="s1-s1-s1-s1-t1" name="CD02 - Remover itens do carrinho" line="20">
 <kw name="Iniciar Sessão" owner="Base" type="SETUP">
 <kw name="New Browser" owner="Browser">
-<msg time="2026-06-07T19:54:48.690719" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\joaop\\OneDrive\\Documents\\ShopAutomation\\results\\browser\\traces\\temp\\29ecbb18-edfd-4282-82de-daacd22e3ac3"}</msg>
-<msg time="2026-06-07T19:54:48.726780" level="INFO">Starting Browser process C:\Python312\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:50228</msg>
-<msg time="2026-06-07T19:54:50.076474" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\joaop\\OneDrive\\Documents\\ShopAutomation\\results\\browser\\traces\\temp\\29ecbb18-edfd-4282-82de-daacd22e3ac3"}</msg>
+<msg time="2026-08-28T14:53:07.995922" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/joaolima/Documents/TA-Tricents/WebShopTricentsAutomation/results/browser/traces/temp/68e73bed-68af-4678-9b79-15bdca9a2ebb"}</msg>
+<msg time="2026-08-28T14:53:08.086521" level="INFO">Starting Browser process /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/Browser/wrapper/index.js using at 127.0.0.1:55540</msg>
+<msg time="2026-08-28T14:53:10.670685" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/joaolima/Documents/TA-Tricents/WebShopTricentsAutomation/results/browser/traces/temp/68e73bed-68af-4678-9b79-15bdca9a2ebb"}</msg>
 <arg>browser=chromium</arg>
 <arg>headless=False</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-06-07T19:54:48.690719" elapsed="1.386763"/>
+<status status="PASS" start="2026-08-28T14:53:07.995519" elapsed="2.679285"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2026-06-07T19:54:54.048788" level="INFO">Successfully initialized new page object and opened url: https://demowebshop.tricentis.com/</msg>
-<msg time="2026-06-07T19:54:54.049789" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2026-08-28T14:53:15.076920" level="INFO">Successfully initialized new page object and opened url: https://demowebshop.tricentis.com/</msg>
+<msg time="2026-08-28T14:53:15.079043" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>https://demowebshop.tricentis.com/</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-06-07T19:54:50.077482" elapsed="3.972307"/>
+<status status="PASS" start="2026-08-28T14:53:10.675674" elapsed="4.405176"/>
 </kw>
-<status status="PASS" start="2026-06-07T19:54:48.688694" elapsed="5.362096"/>
+<status status="PASS" start="2026-08-28T14:53:07.995069" elapsed="7.087887"/>
 </kw>
 <kw name="Get Fake Data" owner="Gerador_dados">
-<msg time="2026-06-07T19:54:54.054307" level="INFO">${dados} = {'first_name': 'Kamilly Cassiano', 'last_name': 'Ribeiro', 'email': 'salesyuri@example.com', 'senha': Secret(value=&lt;secret&gt;)}</msg>
+<msg time="2026-08-28T14:53:15.085893" level="INFO">${dados} = {'first_name': 'Ana Laura Campos', 'last_name': 'Montenegro', 'email': 'pedro-henriquecirino@example.net', 'senha': 'pwd123'}</msg>
 <var>${dados}</var>
-<status status="PASS" start="2026-06-07T19:54:54.053296" elapsed="0.001011"/>
+<status status="PASS" start="2026-08-28T14:53:15.084312" elapsed="0.001698"/>
 </kw>
-<kw name="Clicar em Registrar" owner="Cadastrar_Novos_Users">
+<kw name="Realizo o login" owner="Base">
 <kw name="Click" owner="Browser">
-<msg time="2026-06-07T19:54:54.057824" level="INFO">Clicks the element '//a[contains(text(),"Register")]'.</msg>
-<arg>${tela_cadastro.button_registrar}</arg>
+<msg time="2026-08-28T14:53:15.088618" level="INFO">Clicks the element '//a[contains(text(),"Log in")]'.</msg>
+<arg>${tela_login.button_logar}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-06-07T19:54:54.056821" elapsed="0.546388"/>
-</kw>
-<status status="PASS" start="2026-06-07T19:54:54.055814" elapsed="0.547395"/>
-</kw>
-<kw name="Inserir dados pessoais" owner="Cadastrar_Novos_Users">
-<if>
-<branch type="IF" condition="'${genero}' == 'Masculino'">
-<kw name="Click" owner="Browser">
-<arg>${tela_cadastro.input_male}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2026-06-07T19:54:54.607738" elapsed="0.000000"/>
-</kw>
-<status status="NOT RUN" start="2026-06-07T19:54:54.606734" elapsed="0.001004"/>
-</branch>
-<branch type="ELSE IF" condition="'${genero}' == 'Feminino'">
-<kw name="Click" owner="Browser">
-<msg time="2026-06-07T19:54:54.609749" level="INFO">Clicks the element '//input[@id="gender-female"]'.</msg>
-<arg>${tela_cadastro.input_female}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-06-07T19:54:54.608748" elapsed="0.085542"/>
-</kw>
-<status status="PASS" start="2026-06-07T19:54:54.607738" elapsed="0.086552"/>
-</branch>
-<branch type="ELSE">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${mensagem_erro}</var>
-<arg>ERRO: O valor "${genero}" é inválido! Valores permitidos: 'Masculino' para Male ou 'Feminino' para Famale.</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2026-06-07T19:54:54.694290" elapsed="0.001504"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<arg>${mensagem_erro}</arg>
-<arg>level=ERROR</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2026-06-07T19:54:54.695794" elapsed="0.000000"/>
-</kw>
-<kw name="Fail" owner="BuiltIn">
-<arg>${mensagem_erro}</arg>
-<doc>Fails the test with the given message and optionally alters its tags.</doc>
-<status status="NOT RUN" start="2026-06-07T19:54:54.695794" elapsed="0.000000"/>
-</kw>
-<status status="NOT RUN" start="2026-06-07T19:54:54.694290" elapsed="0.001504"/>
-</branch>
-<status status="PASS" start="2026-06-07T19:54:54.606734" elapsed="0.090067"/>
-</if>
-<kw name="Fill Text" owner="Browser">
-<msg time="2026-06-07T19:54:54.696801" level="INFO">Fills the text 'Kamilly Cassiano' in the given field.</msg>
-<arg>${tela_cadastro.input_first_name}</arg>
-<arg>${nome}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-06-07T19:54:54.696801" elapsed="0.024064"/>
+<status status="PASS" start="2026-08-28T14:53:15.087358" elapsed="0.731574"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-06-07T19:54:54.722864" level="INFO">Fills the text 'Ribeiro' in the given field.</msg>
-<arg>${tela_cadastro.input_last_name}</arg>
-<arg>${sobrenome}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-06-07T19:54:54.720865" elapsed="0.034123"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2026-06-07T19:54:54.756496" level="INFO">Fills the text 'salesyuri@example.com' in the given field.</msg>
-<arg>${tela_cadastro.input_email}</arg>
+<msg time="2026-08-28T14:53:15.819731" level="INFO">Fills the text 'joaoteste@email.com' in the given field.</msg>
+<arg>${tela_login.input_email}</arg>
 <arg>${email}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-06-07T19:54:54.754988" elapsed="0.023809"/>
+<status status="PASS" start="2026-08-28T14:53:15.819148" elapsed="0.023111"/>
 </kw>
-<arg>Feminino</arg>
-<arg>${dados}[first_name]</arg>
-<arg>${dados}[last_name]</arg>
-<arg>${dados}[email]</arg>
-<status status="PASS" start="2026-06-07T19:54:54.605725" elapsed="0.174068"/>
-</kw>
-<kw name="Criar senha" owner="Cadastrar_Novos_Users">
-<kw name="Fill Secret" owner="Browser">
-<arg>${tela_cadastro.input_senha}</arg>
-<arg>$senha</arg>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-08-28T14:53:15.842867" level="INFO">Fills the text 'pwd123' in the given field.</msg>
+<arg>${tela_login.input_senha}</arg>
+<arg>${senha}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
-<doc>Fills the given secret from ``variable_name`` into the
-text field found by ``selector``.</doc>
-<status status="PASS" start="2026-06-07T19:54:54.782020" elapsed="0.029851"/>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-08-28T14:53:15.842452" elapsed="0.016229"/>
 </kw>
-<kw name="Fill Secret" owner="Browser">
-<arg>${tela_cadastro.input_conf_senha}</arg>
-<arg>$senha</arg>
+<kw name="Click" owner="Browser">
+<msg time="2026-08-28T14:53:15.859259" level="INFO">Clicks the element '//input[@type="submit" and contains(@value, "Log in")]'.</msg>
+<arg>${tela_login.button_input_login}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
-<doc>Fills the given secret from ``variable_name`` into the
-text field found by ``selector``.</doc>
-<status status="PASS" start="2026-06-07T19:54:54.812880" elapsed="0.024584"/>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-08-28T14:53:15.858866" elapsed="1.082402"/>
 </kw>
-<arg>$dados[senha]</arg>
-<status status="PASS" start="2026-06-07T19:54:54.779793" elapsed="0.057671"/>
+<kw name="Validar Resultado Do Login" owner="Base">
+<kw name="user_logado" owner="Tela_Inicial">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-08-28T14:53:16.944970" level="INFO">${layout_usuario} = //a[@class="account" and contains(text(), "joaoteste@email.com")]</msg>
+<var>${layout_usuario}</var>
+<arg>//a[@class="account" and contains(text(), "${usuario}")]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-08-28T14:53:16.943873" elapsed="0.001259"/>
+</kw>
+<return>
+<value>${layout_usuario}</value>
+<status status="PASS" start="2026-08-28T14:53:16.945501" elapsed="0.000579"/>
+</return>
+<msg time="2026-08-28T14:53:16.946468" level="INFO">${usuario} = //a[@class="account" and contains(text(), "joaoteste@email.com")]</msg>
+<var>${usuario}</var>
+<arg>${email}</arg>
+<status status="PASS" start="2026-08-28T14:53:16.942882" elapsed="0.004038"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-08-28T14:53:16.976529" level="INFO">Waited for Element with selector //a[@class="account" and contains(text(), "joaoteste@email.com")] at state visible</msg>
+<arg>${usuario}</arg>
+<arg>visible</arg>
+<arg>timeout=3s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-08-28T14:53:16.949648" elapsed="0.027184"/>
+</kw>
+<msg time="2026-08-28T14:53:16.977101" level="INFO">${login_sucesso} = True</msg>
+<var>${login_sucesso}</var>
+<arg>Wait For Elements State</arg>
+<arg>${usuario}</arg>
+<arg>visible</arg>
+<arg>timeout=3s</arg>
+<doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2026-08-28T14:53:16.947421" elapsed="0.029803"/>
+</kw>
+<if>
+<branch type="IF" condition="${login_sucesso}">
+<return>
+<value>SUCESSO</value>
+<status status="PASS" start="2026-08-28T14:53:16.977851" elapsed="0.000130"/>
+</return>
+<status status="PASS" start="2026-08-28T14:53:16.977455" elapsed="0.000598"/>
+</branch>
+<status status="PASS" start="2026-08-28T14:53:16.977419" elapsed="0.000701"/>
+</if>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${login_erro}</var>
+<arg>Wait For Elements State</arg>
+<arg>${tela_login.text_erro_login}</arg>
+<arg>visible</arg>
+<arg>timeout=3s</arg>
+<doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2026-08-28T14:53:16.978271" elapsed="0.000134"/>
+</kw>
+<if>
+<branch type="IF" condition="${login_erro}">
+<return>
+<value>ERRO</value>
+<status status="NOT RUN" start="2026-08-28T14:53:16.978626" elapsed="0.000061"/>
+</return>
+<status status="NOT RUN" start="2026-08-28T14:53:16.978535" elapsed="0.000197"/>
+</branch>
+<status status="NOT RUN" start="2026-08-28T14:53:16.978515" elapsed="0.000256"/>
+</if>
+<kw name="Fail" owner="BuiltIn">
+<arg>Não foi possível identificar o resultado do login.</arg>
+<arg>Nenhum elemento de sucesso ou erro foi encontrado.</arg>
+<doc>Fails the test with the given message and optionally alters its tags.</doc>
+<status status="NOT RUN" start="2026-08-28T14:53:16.978865" elapsed="0.000102"/>
+</kw>
+<arg>${email}</arg>
+<status status="PASS" start="2026-08-28T14:53:16.942089" elapsed="0.036996"/>
+</kw>
+<arg>joaoteste@email.com</arg>
+<arg>${dados}[senha]</arg>
+<status status="PASS" start="2026-08-28T14:53:15.086533" elapsed="1.892644"/>
+</kw>
+<kw name="Seleciono produtos por categoria" owner="Produtos">
+<kw name="categorias" owner="Produtos">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-08-28T14:53:16.981015" level="INFO">${categoria} = //div[@class="block block-category-navigation"]//div[@class="listbox"]//li//a[contains(text(), "Electronics")]</msg>
+<var>${categoria}</var>
+<arg>//div[@class="block block-category-navigation"]//div[@class="listbox"]//li//a[contains(text(), "${tipo_categoria}")]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-08-28T14:53:16.980451" elapsed="0.000761"/>
+</kw>
+<return>
+<value>${categoria}</value>
+<status status="PASS" start="2026-08-28T14:53:16.981447" elapsed="0.000108"/>
+</return>
+<msg time="2026-08-28T14:53:16.981677" level="INFO">${escolher_categoria} = //div[@class="block block-category-navigation"]//div[@class="listbox"]//li//a[contains(text(), "Electronics")]</msg>
+<var>${escolher_categoria}</var>
+<arg>${categoria}</arg>
+<status status="PASS" start="2026-08-28T14:53:16.980118" elapsed="0.001620"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-08-28T14:53:16.982297" level="INFO">Clicks the element '//div[@class="block block-category-navigation"]//div[@class="listbox"]//li//a[contains(text(), "Electronics")]'.</msg>
+<arg>${escolher_categoria}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-08-28T14:53:16.981878" elapsed="0.587918"/>
+</kw>
+<if>
+<branch type="IF" condition="'${subcategoria}' != 'None'">
+<kw name="subcategorias" owner="Produtos">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-08-28T14:53:17.571770" level="INFO">${subcategoria} = //div[@class="sub-category-grid"]//div[@class="sub-category-item"]//h2//a[contains(text(),"Cell phones")]</msg>
+<var>${subcategoria}</var>
+<arg>//div[@class="sub-category-grid"]//div[@class="sub-category-item"]//h2//a[contains(text(),"${tipo_subcategoria}")]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-08-28T14:53:17.571277" elapsed="0.000636"/>
+</kw>
+<return>
+<value>${subcategoria}</value>
+<status status="PASS" start="2026-08-28T14:53:17.572061" elapsed="0.000324"/>
+</return>
+<msg time="2026-08-28T14:53:17.572751" level="INFO">${escolher_subcategoria} = //div[@class="sub-category-grid"]//div[@class="sub-category-item"]//h2//a[contains(text(),"Cell phones")]</msg>
+<var>${escolher_subcategoria}</var>
+<arg>${subcategoria}</arg>
+<status status="PASS" start="2026-08-28T14:53:17.570796" elapsed="0.002279"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-08-28T14:53:17.574911" level="INFO">Clicks the element '//div[@class="sub-category-grid"]//div[@class="sub-category-item"]//h2//a[contains(text(),"Cell phones")]'.</msg>
+<arg>${escolher_subcategoria}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-08-28T14:53:17.573534" elapsed="0.641007"/>
+</kw>
+<status status="PASS" start="2026-08-28T14:53:17.570097" elapsed="0.644676"/>
+</branch>
+<status status="PASS" start="2026-08-28T14:53:17.570062" elapsed="0.644798"/>
+</if>
+<kw name="selecionar_produto" owner="Produtos">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-08-28T14:53:18.216248" level="INFO">${selec_produto} = (//div[@class="product-grid"]//div[2]//h2//a[contains(text(), "Smartphone")])[1]</msg>
+<var>${selec_produto}</var>
+<arg>(//div[@class="product-grid"]//div[2]//h2//a[contains(text(), "${produto}")])[${index}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-08-28T14:53:18.215720" elapsed="0.000651"/>
+</kw>
+<return>
+<value>${selec_produto}</value>
+<status status="PASS" start="2026-08-28T14:53:18.216502" elapsed="0.000134"/>
+</return>
+<msg time="2026-08-28T14:53:18.216798" level="INFO">${escolher_produto} = (//div[@class="product-grid"]//div[2]//h2//a[contains(text(), "Smartphone")])[1]</msg>
+<var>${escolher_produto}</var>
+<arg>${produtos}</arg>
+<arg>${index}</arg>
+<status status="PASS" start="2026-08-28T14:53:18.215094" elapsed="0.001788"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-08-28T14:53:18.217577" level="INFO">Clicks the element '(//div[@class="product-grid"]//div[2]//h2//a[contains(text(), "Smartphone")])[1]'.</msg>
+<arg>${escolher_produto}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-08-28T14:53:18.217074" elapsed="0.649439"/>
+</kw>
+<arg>Electronics</arg>
+<arg>Smartphone</arg>
+<arg>Cell phones</arg>
+<status status="PASS" start="2026-08-28T14:53:16.979627" elapsed="1.887140"/>
+</kw>
+<kw name="Adiciono ao carrinho" owner="Carrinho">
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-08-28T14:53:18.868501" level="INFO">Fills the text '1' in the given field.</msg>
+<arg>${tela_detalhes_produto.input_quantidade}</arg>
+<arg>${quantidade}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-08-28T14:53:18.867681" elapsed="0.223634"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-08-28T14:53:19.092598" level="INFO">Clicks the element '//div[@class="overview"]//input[@type="button" and @value="Add to cart"]'.</msg>
+<arg>${tela_detalhes_produto.button_add_carrinho}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-08-28T14:53:19.091578" elapsed="0.038572"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2026-08-28T14:53:19.951187" level="INFO">Text: 'The product has been added to your shopping cart'</msg>
+<arg>${tela_login.text_add_carrinho_sucess}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2026-08-28T14:53:19.130410" elapsed="0.821324"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-08-28T14:53:19.957504" level="INFO">Waited for Element with selector //div[@id="bar-notification"]/p[@class="content"] at state visible</msg>
+<arg>${tela_login.text_add_carrinho_sucess}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-08-28T14:53:19.952238" elapsed="0.005538"/>
+</kw>
+<arg>1</arg>
+<status status="PASS" start="2026-08-28T14:53:18.867137" elapsed="1.090839"/>
+</kw>
+<kw name="Seleciono produtos por categoria" owner="Produtos">
+<kw name="categorias" owner="Produtos">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-08-28T14:53:19.959649" level="INFO">${categoria} = //div[@class="block block-category-navigation"]//div[@class="listbox"]//li//a[contains(text(), "Books")]</msg>
+<var>${categoria}</var>
+<arg>//div[@class="block block-category-navigation"]//div[@class="listbox"]//li//a[contains(text(), "${tipo_categoria}")]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-08-28T14:53:19.959314" elapsed="0.000410"/>
+</kw>
+<return>
+<value>${categoria}</value>
+<status status="PASS" start="2026-08-28T14:53:19.959814" elapsed="0.000179"/>
+</return>
+<msg time="2026-08-28T14:53:19.960155" level="INFO">${escolher_categoria} = //div[@class="block block-category-navigation"]//div[@class="listbox"]//li//a[contains(text(), "Books")]</msg>
+<var>${escolher_categoria}</var>
+<arg>${categoria}</arg>
+<status status="PASS" start="2026-08-28T14:53:19.959023" elapsed="0.001207"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-08-28T14:53:19.960829" level="INFO">Clicks the element '//div[@class="block block-category-navigation"]//div[@class="listbox"]//li//a[contains(text(), "Books")]'.</msg>
+<arg>${escolher_categoria}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-08-28T14:53:19.960383" elapsed="0.677299"/>
+</kw>
+<if>
+<branch type="IF" condition="'${subcategoria}' != 'None'">
+<kw name="subcategorias" owner="Produtos">
+<var>${escolher_subcategoria}</var>
+<arg>${subcategoria}</arg>
+<status status="NOT RUN" start="2026-08-28T14:53:20.638863" elapsed="0.000190"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>${escolher_subcategoria}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-08-28T14:53:20.639250" elapsed="0.000256"/>
+</kw>
+<status status="NOT RUN" start="2026-08-28T14:53:20.638110" elapsed="0.001773"/>
+</branch>
+<status status="PASS" start="2026-08-28T14:53:20.638067" elapsed="0.001934"/>
+</if>
+<kw name="selecionar_produto" owner="Produtos">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-08-28T14:53:20.641725" level="INFO">${selec_produto} = (//div[@class="product-grid"]//div[2]//h2//a[contains(text(), "Computing and Internet")])[1]</msg>
+<var>${selec_produto}</var>
+<arg>(//div[@class="product-grid"]//div[2]//h2//a[contains(text(), "${produto}")])[${index}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-08-28T14:53:20.641077" elapsed="0.000796"/>
+</kw>
+<return>
+<value>${selec_produto}</value>
+<status status="PASS" start="2026-08-28T14:53:20.642040" elapsed="0.000149"/>
+</return>
+<msg time="2026-08-28T14:53:20.642358" level="INFO">${escolher_produto} = (//div[@class="product-grid"]//div[2]//h2//a[contains(text(), "Computing and Internet")])[1]</msg>
+<var>${escolher_produto}</var>
+<arg>${produtos}</arg>
+<arg>${index}</arg>
+<status status="PASS" start="2026-08-28T14:53:20.640323" elapsed="0.002120"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-08-28T14:53:20.643200" level="INFO">Clicks the element '(//div[@class="product-grid"]//div[2]//h2//a[contains(text(), "Computing and Internet")])[1]'.</msg>
+<arg>${escolher_produto}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-08-28T14:53:20.642657" elapsed="0.799926"/>
+</kw>
+<arg>Books</arg>
+<arg>Computing and Internet</arg>
+<status status="PASS" start="2026-08-28T14:53:19.958497" elapsed="1.484347"/>
+</kw>
+<kw name="Adiciono ao carrinho" owner="Carrinho">
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-08-28T14:53:21.444469" level="INFO">Fills the text '3' in the given field.</msg>
+<arg>${tela_detalhes_produto.input_quantidade}</arg>
+<arg>${quantidade}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-08-28T14:53:21.443761" elapsed="0.024350"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-08-28T14:53:21.468964" level="INFO">Clicks the element '//div[@class="overview"]//input[@type="button" and @value="Add to cart"]'.</msg>
+<arg>${tela_detalhes_produto.button_add_carrinho}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-08-28T14:53:21.468371" elapsed="0.041861"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2026-08-28T14:53:22.319910" level="INFO">Text: 'The product has been added to your shopping cart'</msg>
+<arg>${tela_login.text_add_carrinho_sucess}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2026-08-28T14:53:21.510452" elapsed="0.809749"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-08-28T14:53:22.326129" level="INFO">Waited for Element with selector //div[@id="bar-notification"]/p[@class="content"] at state visible</msg>
+<arg>${tela_login.text_add_carrinho_sucess}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-08-28T14:53:22.320637" elapsed="0.005745"/>
+</kw>
+<arg>3</arg>
+<status status="PASS" start="2026-08-28T14:53:21.443206" elapsed="0.883372"/>
+</kw>
+<kw name="Acesso o carrinho" owner="Carrinho">
+<kw name="Click" owner="Browser">
+<msg time="2026-08-28T14:53:22.328437" level="INFO">Clicks the element '//li[@id='topcartlink']//span[@class='cart-label']'.</msg>
+<arg>${tela_carrinho.button_carrinho}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-08-28T14:53:22.327523" elapsed="0.751035"/>
+</kw>
+<status status="PASS" start="2026-08-28T14:53:22.327000" elapsed="0.751778"/>
+</kw>
+<kw name="Remover itens do carrinho" owner="Carrinho">
+<for flavor="IN">
+<iter>
+<kw name="remover_itens_carrinho" owner="Carrinho">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-08-28T14:53:23.080833" level="INFO">${remover_produto} = //td[@class='product']//a[@class="product-name" and contains(text(), "Smartphone")]/ancestor::tr//input[@type='checkbox']</msg>
+<var>${remover_produto}</var>
+<arg>//td[@class='product']//a[@class="product-name" and contains(text(), "${nome_produto}")]/ancestor::tr//input[@type='checkbox']</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-08-28T14:53:23.080430" elapsed="0.000506"/>
+</kw>
+<return>
+<value>${remover_produto}</value>
+<status status="PASS" start="2026-08-28T14:53:23.081046" elapsed="0.000220"/>
+</return>
+<msg time="2026-08-28T14:53:23.081409" level="INFO">${remover_itens} = //td[@class='product']//a[@class="product-name" and contains(text(), "Smartphone")]/ancestor::tr//input[@type='checkbox']</msg>
+<var>${remover_itens}</var>
+<arg>${iten}</arg>
+<status status="PASS" start="2026-08-28T14:53:23.080092" elapsed="0.001391"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-08-28T14:53:23.110823" level="INFO">Waited for Element with selector //td[@class='product']//a[@class="product-name" and contains(text(), "Smartphone")]/ancestor::tr//input[@type='checkbox'] at state visible</msg>
+<arg>${remover_itens}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-08-28T14:53:23.081704" elapsed="0.029317"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-08-28T14:53:23.111835" level="INFO">Clicks the element '//td[@class='product']//a[@class="product-name" and contains(text(), "Smartphone")]/ancestor::tr//input[@type='checkbox']'.</msg>
+<arg>${remover_itens}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-08-28T14:53:23.111218" elapsed="0.029372"/>
+</kw>
+<var name="${iten}">Smartphone</var>
+<status status="PASS" start="2026-08-28T14:53:23.079868" elapsed="0.060848"/>
+</iter>
+<iter>
+<kw name="remover_itens_carrinho" owner="Carrinho">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-08-28T14:53:23.141449" level="INFO">${remover_produto} = //td[@class='product']//a[@class="product-name" and contains(text(), "Computing and Internet")]/ancestor::tr//input[@type='checkbox']</msg>
+<var>${remover_produto}</var>
+<arg>//td[@class='product']//a[@class="product-name" and contains(text(), "${nome_produto}")]/ancestor::tr//input[@type='checkbox']</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-08-28T14:53:23.141229" elapsed="0.000282"/>
+</kw>
+<return>
+<value>${remover_produto}</value>
+<status status="PASS" start="2026-08-28T14:53:23.141567" elapsed="0.000139"/>
+</return>
+<msg time="2026-08-28T14:53:23.141810" level="INFO">${remover_itens} = //td[@class='product']//a[@class="product-name" and contains(text(), "Computing and Internet")]/ancestor::tr//input[@type='checkbox']</msg>
+<var>${remover_itens}</var>
+<arg>${iten}</arg>
+<status status="PASS" start="2026-08-28T14:53:23.141016" elapsed="0.000964"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-08-28T14:53:23.144660" level="INFO">Waited for Element with selector //td[@class='product']//a[@class="product-name" and contains(text(), "Computing and Internet")]/ancestor::tr//input[@type='checkbox'] at state visible</msg>
+<arg>${remover_itens}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-08-28T14:53:23.142094" elapsed="0.002716"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-08-28T14:53:23.145329" level="INFO">Clicks the element '//td[@class='product']//a[@class="product-name" and contains(text(), "Computing and Internet")]/ancestor::tr//input[@type='checkbox']'.</msg>
+<arg>${remover_itens}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-08-28T14:53:23.144957" elapsed="0.212569"/>
+</kw>
+<var name="${iten}">Computing and Internet</var>
+<status status="PASS" start="2026-08-28T14:53:23.140834" elapsed="0.216802"/>
+</iter>
+<var>${iten}</var>
+<value>@{itens}</value>
+<status status="PASS" start="2026-08-28T14:53:23.079604" elapsed="0.278076"/>
+</for>
+<kw name="Click" owner="Browser">
+<msg time="2026-08-28T14:53:23.358170" level="INFO">Clicks the element '//input[@name="updatecart"]'.</msg>
+<arg>${tela_carrinho.button_update_cart}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-08-28T14:53:23.357775" elapsed="0.642155"/>
+</kw>
+<kw name="Validar Texto no Elemento" owner="Base">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-08-28T14:53:24.029725" level="INFO">Waited for Element with selector //div[@class="order-summary-content"] at state visible</msg>
+<arg>${seletor}</arg>
+<arg>visible</arg>
+<arg>timeout=${timeout}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-08-28T14:53:24.002113" elapsed="0.027841"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2026-08-28T14:53:24.044481" level="INFO">Text: 'Your Shopping Cart is empty!'</msg>
+<msg time="2026-08-28T14:53:24.044693" level="INFO">${mensagem_obtida} = Your Shopping Cart is empty!</msg>
+<var>${mensagem_obtida}</var>
+<arg>${seletor}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2026-08-28T14:53:24.030199" elapsed="0.014556"/>
+</kw>
+<if>
+<branch type="IF" condition="'${mensagem_obtida}' != '${mensagem_esperada}'">
+<kw name="Fail" owner="BuiltIn">
+<arg>❌ Texto diferente! Esperado: "${mensagem_esperada}" | Obtido: "${mensagem_obtida}"</arg>
+<doc>Fails the test with the given message and optionally alters its tags.</doc>
+<status status="NOT RUN" start="2026-08-28T14:53:24.045390" elapsed="0.000442"/>
+</kw>
+<status status="NOT RUN" start="2026-08-28T14:53:24.044942" elapsed="0.000970"/>
+</branch>
+<status status="PASS" start="2026-08-28T14:53:24.044916" elapsed="0.001044"/>
+</if>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-08-28T14:53:24.047046" level="INFO">✅ Texto validado: "Your Shopping Cart is empty!"</msg>
+<arg>✅ Texto validado: "${mensagem_esperada}"</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-08-28T14:53:24.046068" elapsed="0.001337"/>
+</kw>
+<arg>${tela_carrinho.text_carrinho_vazio}</arg>
+<arg>Your Shopping Cart is empty!</arg>
+<doc>Aguarda elemento e compara texto</doc>
+<status status="PASS" start="2026-08-28T14:53:24.000864" elapsed="0.046666"/>
+</kw>
+<arg>Smartphone</arg>
+<arg>Computing and Internet</arg>
+<status status="PASS" start="2026-08-28T14:53:23.079145" elapsed="0.968473"/>
 </kw>
 <kw name="Take Screenshot" owner="Browser" type="TEARDOWN">
-<msg time="2026-06-07T19:54:55.099264" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2026-08-28T14:53:24.673583" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="PASS" start="2026-06-07T19:54:54.838465" elapsed="0.261799"/>
+<status status="PASS" start="2026-08-28T14:53:24.048173" elapsed="0.625568"/>
 </kw>
-<msg time="2026-06-07T19:54:55.132894" level="INFO">Switching context to context=96c114d6-b7fa-49fc-99fb-4387bbf3eb6e in CURRENT</msg>
-<msg time="2026-06-07T19:54:55.149471" level="INFO">Successfully changed active context: context=96c114d6-b7fa-49fc-99fb-4387bbf3eb6e</msg>
-<msg time="2026-06-07T19:54:55.178892" level="INFO">Successfully closed Context</msg>
-<status status="PASS" start="2026-06-07T19:54:48.675780" elapsed="6.425485"/>
+<msg time="2026-08-28T14:53:24.690582" level="INFO">Switching context to context=737209f6-d43e-4583-93d0-d3b8330cac34 in CURRENT</msg>
+<msg time="2026-08-28T14:53:24.704145" level="INFO">Successfully changed active context: context=737209f6-d43e-4583-93d0-d3b8330cac34</msg>
+<msg time="2026-08-28T14:53:24.764496" level="INFO">Successfully closed Context</msg>
+<status status="PASS" start="2026-08-28T14:53:07.993331" elapsed="16.680597"/>
 </test>
-<status status="PASS" start="2026-06-07T19:54:48.193149" elapsed="7.026766"/>
+<status status="PASS" start="2026-08-28T14:53:07.738966" elapsed="17.026207"/>
 </suite>
-<status status="PASS" start="2026-06-07T19:54:48.181611" elapsed="7.164140"/>
+<status status="PASS" start="2026-08-28T14:53:07.737346" elapsed="17.031510"/>
 </suite>
-<status status="PASS" start="2026-06-07T19:54:48.166057" elapsed="7.347144"/>
+<status status="PASS" start="2026-08-28T14:53:07.735578" elapsed="17.035375"/>
 </suite>
-<status status="PASS" start="2026-06-07T19:54:48.107230" elapsed="7.422897"/>
+<status status="PASS" start="2026-08-28T14:53:07.718524" elapsed="17.054848"/>
 </suite>
 <statistics>
 <total>
@@ -170,10 +563,10 @@ text field found by ``selector``.</doc>
 <tag>
 </tag>
 <suite>
-<stat name="ShopAutomation" id="s1" pass="1" fail="0" skip="0">ShopAutomation</stat>
-<stat name="Tests" id="s1-s1" pass="1" fail="0" skip="0">ShopAutomation.Tests</stat>
-<stat name="Cadastro" id="s1-s1-s1" pass="1" fail="0" skip="0">ShopAutomation.Tests.Cadastro</stat>
-<stat name="Cadastro Novos Users" id="s1-s1-s1-s1" pass="1" fail="0" skip="0">ShopAutomation.Tests.Cadastro.Cadastro Novos Users</stat>
+<stat name="WebShopTricentsAutomation" id="s1" pass="1" fail="0" skip="0">WebShopTricentsAutomation</stat>
+<stat name="Tests" id="s1-s1" pass="1" fail="0" skip="0">WebShopTricentsAutomation.Tests</stat>
+<stat name="Compras" id="s1-s1-s1" pass="1" fail="0" skip="0">WebShopTricentsAutomation.Tests.Compras</stat>
+<stat name="Carrinho" id="s1-s1-s1-s1" pass="1" fail="0" skip="0">WebShopTricentsAutomation.Tests.Compras.Carrinho</stat>
 </suite>
 </statistics>
 <errors>

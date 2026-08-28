@@ -4,7 +4,7 @@
 &{tela_detalhes_produto}
 
 ...       button_add_carrinho=//div[@class="overview"]//input[@type="button" and @value="Add to cart"]
-...       input_quatidade=//input[@class="qty-input" and @value="1"]
+...       input_quantidade=//input[@class="qty-input"]
 
 
 
@@ -15,10 +15,3 @@ preco_produto
     ${preco_unitario} =     Set Variable    
     ...    //div[@class="product-price"]//span[contains(text(), "${preco}")]
     RETURN     ${preco_unitario}
-
-inserir_quantidade
-    [Arguments]    ${quantidade}
-    ${quantidade_itens}=    Set Variable    
-    ...    //input[@class="qty-input" and @value="${quantidade}"]
-    RETURN    ${quantidade_itens}
-

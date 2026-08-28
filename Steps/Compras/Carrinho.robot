@@ -7,11 +7,11 @@ Resource        ../../Elements/Compras/Carrinho.resource
 
 *** Keywords ***
 Adiciono ao carrinho
-    [Arguments]         ${quantidade}=1      
+    [Arguments]         ${quantidade}      
 
     
-    ${quantidade_itens}=        Detalhes_Produto.inserir_quantidade             ${quantidade}
-    Click        ${tela_detalhes_produto.button_add_carrinho}          
+    Fill Text        ${tela_detalhes_produto.input_quantidade}          ${quantidade}
+    Click            ${tela_detalhes_produto.button_add_carrinho}          
     
     Get Text                        ${tela_login.text_add_carrinho_sucess}       
     Wait For Elements State         ${tela_login.text_add_carrinho_sucess}     visible
@@ -33,4 +33,21 @@ Validar produtos no carrinho
          ...    visible
     END
     
+Remover itens do carrinho
+    [Arguments]    @{itens}
 
+
+    FOR    ${iten}    IN    @{itens}
+        ${remover_itens} =     Carrinho.remover_itens_carrinho    ${iten}  
+
+        Wait For Elements State     
+        ...    ${remover_itens}   
+        ...     visible
+        Click     ${remover_itens}
+    END
+
+    Click    ${tela_carrinho.button_update_cart}
+
+    Validar Texto no Elemento    ${tela_carrinho.text_carrinho_vazio}    Your Shopping Cart is empty!
+        
+    
