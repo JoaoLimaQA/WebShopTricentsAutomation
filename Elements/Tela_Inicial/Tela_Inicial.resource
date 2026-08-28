@@ -8,6 +8,7 @@
 ...    input_senha=//input[@id="Password"]
 ...    button_input_login=//input[@type="submit" and contains(@value, "Log in")]
 ...    text_erro_login=//div[@class="form-fields"]//div//div//li
+...    text_add_carrinho_sucess=//div[@id="bar-notification"]/p[@class="content"]
 
 # ---------- TELA INICIAL ----------
 
@@ -27,5 +28,5 @@ user_logado
 notificacoes
     [Arguments]    ${texto_notificado}
     ${notificacao}     Set Variable       
-    ...     //div[@id="bar-notification"]//p[contains(text(), "${texto_notificado} ")]
+    ...    //div[@id="bar-notification"]/p[contains(normalize-space(text()), "${texto_notificado} ")]
     RETURN   ${notificacao}

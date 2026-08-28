@@ -16,4 +16,9 @@ preco_produto
     ...    //div[@class="product-price"]//span[contains(text(), "${preco}")]
     RETURN     ${preco_unitario}
 
+inserir_quantidade
+    [Arguments]    ${quantidade}
+    ${quantidade_itens}=    Set Variable    
+    ...    //input[@class="qty-input" and @value="${quantidade}"]
+    RETURN    ${quantidade_itens}
 

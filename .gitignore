@@ -1,0 +1,17 @@
+.vscode/
+[Rr]esults/
+[Oo]utput/
+[Aa]llure-report/
+[Rr]eports/
+[Rr]esource/Downloads
+log.html
+output.xml
+report.html
+*selenium-screenshot*
+*screenshot*
+default.yaml
+__pycache__
+interactive_console_output.xml
+*.out
+*.code-workspace
+/*.png

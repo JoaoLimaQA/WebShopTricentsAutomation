@@ -9,6 +9,6 @@ def get_fake_data():
         "first_name" : fake.name_female() , 
         "last_name" : fake.last_name_female(),
         "email" : fake.email(),     
-        "senha": Secret("pwd123")
+        "senha": "pwd123"
     }
     return  data

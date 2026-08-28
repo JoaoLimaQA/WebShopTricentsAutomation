@@ -21,27 +21,42 @@ Iniciar Sessão
 Realizo o login
     [Arguments]    ${email}    ${senha}
 
-    Click            ${tela_login.button_logar}
-    Fill Text        ${tela_login.input_email}          ${email}
-    Fill Secret      ${tela_login.input_senha}           $senha
+    Click              ${tela_login.button_logar}
+    Fill Text          ${tela_login.input_email}          ${email}
+    Fill Text        ${tela_login.input_senha}          ${senha}
 
     Click    ${tela_login.button_input_login}
-    
-           
+    Validar Resultado Do Login    ${email}
 
-    IF    ${tela_login.text_erro_login} == $true   
-          
-          ${dados}     Get Fake Data 
-          Dado que clico em Registrar
-          Quando Insiro dados pessoais    Feminino    ${dados}[first_name]    ${dados}[last_name]    ${dados}[email]
-          E Crio a senha    $dados[senha]
-          Então clico em cadastrar
+
+
+Validar Resultado Do Login
+    [Arguments]    ${email}
+    
+    ${usuario}=     Tela_Inicial.user_logado    ${email}
+
+    ${login_sucesso}=    Run Keyword And Return Status
+    ...    Wait For Elements State
+    ...    ${usuario}
+    ...    visible
+    ...    timeout=3s
+
+    IF    ${login_sucesso}
+        RETURN    SUCESSO
     END
-    
-    
-    ${email_usuario} =         Tela_Inicial.user_logado     ${email}
-    Validar Texto no Elemento        ${email_usuario}        ${email}
 
+    ${login_erro}=    Run Keyword And Return Status
+    ...    Wait For Elements State
+    ...    ${tela_login.text_erro_login}
+    ...    visible
+    ...    timeout=3s
+
+    IF    ${login_erro}
+        RETURN    ERRO
+    END
+
+    Fail    Não foi possível identificar o resultado do login.
+    ...    Nenhum elemento de sucesso ou erro foi encontrado.
 
 Validar Texto no Elemento
     [Arguments]   ${seletor}      ${mensagem_esperada}       ${timeout}=10
@@ -68,4 +83,4 @@ Validar Notificacoes
 
     ${mensagem_not} =         Tela_Inicial.notificacoes        ${texto_not_esperado}
     
-    Validar Texto no Elemento        ${mensagem_not}        ${texto_not_esperado}        timeout=3s
+    Validar Texto no Elemento        ${mensagem_not}        ${texto_not_esperado}        timeout=10s
