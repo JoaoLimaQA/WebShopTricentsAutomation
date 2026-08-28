@@ -6,7 +6,6 @@
 ...       button_carrinho=//li[@id='topcartlink']//span[@class='cart-label']
 ...       button_update_cart=//input[@name="updatecart"]
 ...       text_carrinho_vazio=//div[@class="order-summary-content"]
-...       button_continue_shop=//input[@name="continueshopping"]
 
 
 
