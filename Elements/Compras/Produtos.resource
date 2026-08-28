@@ -10,7 +10,7 @@ categorias
 subcategorias
     [Arguments]    ${tipo_subcategoria}  
     ${subcategoria}    Set Variable   
-    ...     //div[@class="sub-category-grid"]//div[@class="sub-category-item"]//div//a[contains(@href, "${tipo_subcategoria}")]
+    ...     //div[@class="sub-category-grid"]//div[@class="sub-category-item"]//h2//a[contains(text(),"${tipo_subcategoria}")]
     RETURN    ${subcategoria}
 
 selecionar_produto

@@ -1,0 +1,13 @@
+robotframework-databaselibrary
+robotframework-seleniumlibrary
+robotframework-requests
+robotframework-crypto
+robotframework-excellib
+robotframework-jsonlibrary
+robotframework-pabot
+robotframework-faker
+pyyaml
+pyodbc
+webdriver-manager
+cssselect
+allure-robotframework
