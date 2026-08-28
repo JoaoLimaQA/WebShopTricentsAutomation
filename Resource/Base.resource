@@ -10,13 +10,14 @@ Resource           ../Steps/Compras/Detalhes_Produto.robot
 
 Resource           ../Elements/Tela_Inicial/Tela_Inicial.resource
 
-
+#Em Nem Browser o args faz com o navegador abra no monitor a direita. 
+#Caso necessite que abra a esquerda coloque args=["--window-position=-1920,0"]
+#Caso tenha apenas um monitor coloque  args=["--window-position=0,0"]
 
 *** Keywords ***
 Iniciar Sessão
-    New Browser        browser=chromium    headless=False
+    New Browser        browser=chromium    headless=False   args=["--window-position=1920,0"]
     New Page           https://demowebshop.tricentis.com/
-
 
 Realizo o login
     [Arguments]    ${email}    ${senha}
