@@ -1,31 +1,112 @@
-{"level":30,"time":"2026-06-07T22:02:11.945Z","pid":11884,"hostname":"JoaoPSLima","msg":"Listening on 127.0.0.1:50368"}
-{"level":30,"time":"2026-06-07T22:02:12.339Z","pid":11884,"hostname":"JoaoPSLima","msg":"Start of node method newBrowser"}
-{"level":30,"time":"2026-06-07T22:02:13.495Z","pid":11884,"hostname":"JoaoPSLima","msg":"Adding browser to stack: chromium, version: 143.0.7499.4"}
-{"level":30,"time":"2026-06-07T22:02:13.496Z","pid":11884,"hostname":"JoaoPSLima","msg":"Adding 0 contexts to browser"}
-{"level":30,"time":"2026-06-07T22:02:13.497Z","pid":11884,"hostname":"JoaoPSLima","msg":"End of node method newBrowser"}
-{"level":30,"time":"2026-06-07T22:02:13.506Z","pid":11884,"hostname":"JoaoPSLima","msg":"Start of node method newPage"}
-{"level":30,"time":"2026-06-07T22:02:13.507Z","pid":11884,"hostname":"JoaoPSLima","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@d25e49e41743cf75735aa3f848737e00\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=0273501e-d7a8-48ff-b4ba-db13cf61a39c\"}"}
-{"level":30,"time":"2026-06-07T22:02:13.540Z","pid":11884,"hostname":"JoaoPSLima","msg":"Setting default timeout for context context=f5e4e807-c457-4021-a8fe-666ef030c92e to 10000"}
-{"level":30,"time":"2026-06-07T22:02:13.541Z","pid":11884,"hostname":"JoaoPSLima","msg":"Changed active context: context=f5e4e807-c457-4021-a8fe-666ef030c92e"}
-{"level":30,"time":"2026-06-07T22:02:13.973Z","pid":11884,"hostname":"JoaoPSLima","msg":"Video path: undefined"}
-{"level":30,"time":"2026-06-07T22:02:13.973Z","pid":11884,"hostname":"JoaoPSLima","msg":"Changed active page"}
-{"level":30,"time":"2026-06-07T22:02:17.215Z","pid":11884,"hostname":"JoaoPSLima","msg":"End of node method newPage"}
-{"level":30,"time":"2026-06-07T22:02:17.263Z","pid":11884,"hostname":"JoaoPSLima","msg":"Start of node method takeScreenshot"}
-{"level":30,"time":"2026-06-07T22:02:17.263Z","pid":11884,"hostname":"JoaoPSLima","Take screenshot with options: ":{"path":"C:\\Users\\joaop\\OneDrive\\Documents\\ShopAutomation\\results\\browser\\screenshot\\robotframework-browser-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
-{"level":30,"time":"2026-06-07T22:02:17.602Z","pid":11884,"hostname":"JoaoPSLima","msg":"End of node method takeScreenshot"}
-{"level":30,"time":"2026-06-07T22:02:17.661Z","pid":11884,"hostname":"JoaoPSLima","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2026-06-07T22:02:17.668Z","pid":11884,"hostname":"JoaoPSLima","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2026-06-07T22:02:17.672Z","pid":11884,"hostname":"JoaoPSLima","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2026-06-07T22:02:17.675Z","pid":11884,"hostname":"JoaoPSLima","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2026-06-07T22:02:17.678Z","pid":11884,"hostname":"JoaoPSLima","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2026-06-07T22:02:17.686Z","pid":11884,"hostname":"JoaoPSLima","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2026-06-07T22:02:17.693Z","pid":11884,"hostname":"JoaoPSLima","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2026-06-07T22:02:17.695Z","pid":11884,"hostname":"JoaoPSLima","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2026-06-07T22:02:17.702Z","pid":11884,"hostname":"JoaoPSLima","msg":"Changed active context: context=f5e4e807-c457-4021-a8fe-666ef030c92e"}
-{"level":30,"time":"2026-06-07T22:02:17.702Z","pid":11884,"hostname":"JoaoPSLima","msg":"Changing current active page: page=79ef2a32-3ca7-4902-bf1e-a3cf85ba5420"}
-{"level":30,"time":"2026-06-07T22:02:17.702Z","pid":11884,"hostname":"JoaoPSLima","msg":"Changed active page"}
-{"level":30,"time":"2026-06-07T22:02:17.707Z","pid":11884,"hostname":"JoaoPSLima","msg":"Start of node method closeContext"}
-{"level":30,"time":"2026-06-07T22:02:17.722Z","pid":11884,"hostname":"JoaoPSLima","msg":"Removed page=4a532e40-2a3f-45da-b8c3-a8adc2dcfbe3 from context=f5e4e807-c457-4021-a8fe-666ef030c92e page stack"}
-{"level":30,"time":"2026-06-07T22:02:17.729Z","pid":11884,"hostname":"JoaoPSLima","msg":"End of node method closeContext"}
-{"level":30,"time":"2026-06-07T22:02:17.868Z","pid":11884,"hostname":"JoaoPSLima","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2026-06-07T22:02:17.868Z","pid":11884,"hostname":"JoaoPSLima","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-08-28T17:53:08.472Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Listening on 127.0.0.1:55540"}
+{"level":30,"time":"2026-08-28T17:53:09.572Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-08-28T17:53:10.668Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Adding browser to stack: chromium, version: 143.0.7499.4"}
+{"level":30,"time":"2026-08-28T17:53:10.669Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-08-28T17:53:10.669Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-08-28T17:53:10.680Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-08-28T17:53:10.680Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@e6786928386e5204cbaf9a33b237668e\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=12f89473-e67f-4492-8f7f-404c67d78ebc\"}"}
+{"level":30,"time":"2026-08-28T17:53:10.689Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Setting default timeout for context context=737209f6-d43e-4583-93d0-d3b8330cac34 to 10000"}
+{"level":30,"time":"2026-08-28T17:53:10.689Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Changed active context: context=737209f6-d43e-4583-93d0-d3b8330cac34"}
+{"level":30,"time":"2026-08-28T17:53:11.787Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Video path: undefined"}
+{"level":30,"time":"2026-08-28T17:53:11.787Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Changed active page"}
+{"level":30,"time":"2026-08-28T17:53:15.054Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"End of node method newPage"}
+{"level":30,"time":"2026-08-28T17:53:15.095Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-08-28T17:53:15.095Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Strict mode is enabled, find Locator with //a[contains(text(),\"Log in\")] in page."}
+{"level":30,"time":"2026-08-28T17:53:15.818Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"End of node method click"}
+{"level":30,"time":"2026-08-28T17:53:15.821Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-08-28T17:53:15.821Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Strict mode is enabled, find Locator with //input[@id=\"Email\"] in page."}
+{"level":30,"time":"2026-08-28T17:53:15.841Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"End of node method fillText"}
+{"level":30,"time":"2026-08-28T17:53:15.843Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-08-28T17:53:15.843Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Strict mode is enabled, find Locator with //input[@id=\"Password\"] in page."}
+{"level":30,"time":"2026-08-28T17:53:15.858Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"End of node method fillText"}
+{"level":30,"time":"2026-08-28T17:53:15.860Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-08-28T17:53:15.860Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Strict mode is enabled, find Locator with //input[@type=\"submit\" and contains(@value, \"Log in\")] in page."}
+{"level":30,"time":"2026-08-28T17:53:16.939Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"End of node method click"}
+{"level":30,"time":"2026-08-28T17:53:16.952Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-08-28T17:53:16.953Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Strict mode is enabled, find Locator with //a[@class=\"account\" and contains(text(), \"joaoteste@email.com\")] in page."}
+{"level":30,"time":"2026-08-28T17:53:16.975Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-08-28T17:53:16.983Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-08-28T17:53:16.983Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Strict mode is enabled, find Locator with //div[@class=\"block block-category-navigation\"]//div[@class=\"listbox\"]//li//a[contains(text(), \"Electronics\")] in page."}
+{"level":30,"time":"2026-08-28T17:53:17.568Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"End of node method click"}
+{"level":30,"time":"2026-08-28T17:53:17.577Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-08-28T17:53:17.578Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Strict mode is enabled, find Locator with //div[@class=\"sub-category-grid\"]//div[@class=\"sub-category-item\"]//h2//a[contains(text(),\"Cell phones\")] in page."}
+{"level":30,"time":"2026-08-28T17:53:18.212Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"End of node method click"}
+{"level":30,"time":"2026-08-28T17:53:18.219Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-08-28T17:53:18.219Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Strict mode is enabled, find Locator with (//div[@class=\"product-grid\"]//div[2]//h2//a[contains(text(), \"Smartphone\")])[1] in page."}
+{"level":30,"time":"2026-08-28T17:53:18.865Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"End of node method click"}
+{"level":30,"time":"2026-08-28T17:53:18.870Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-08-28T17:53:18.870Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Strict mode is enabled, find Locator with //input[@class=\"qty-input\"] in page."}
+{"level":30,"time":"2026-08-28T17:53:19.090Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"End of node method fillText"}
+{"level":30,"time":"2026-08-28T17:53:19.093Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-08-28T17:53:19.093Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Strict mode is enabled, find Locator with //div[@class=\"overview\"]//input[@type=\"button\" and @value=\"Add to cart\"] in page."}
+{"level":30,"time":"2026-08-28T17:53:19.129Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"End of node method click"}
+{"level":30,"time":"2026-08-28T17:53:19.132Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Start of node method getText"}
+{"level":30,"time":"2026-08-28T17:53:19.132Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Strict mode is enabled, find Locator with //div[@id=\"bar-notification\"]/p[@class=\"content\"] in page."}
+{"level":30,"time":"2026-08-28T17:53:19.949Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Retrieved text for element //div[@id=\"bar-notification\"]/p[@class=\"content\"] containing The product has been added to your shopping cart"}
+{"level":30,"time":"2026-08-28T17:53:19.949Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"End of node method getText"}
+{"level":30,"time":"2026-08-28T17:53:19.955Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-08-28T17:53:19.955Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Strict mode is enabled, find Locator with //div[@id=\"bar-notification\"]/p[@class=\"content\"] in page."}
+{"level":30,"time":"2026-08-28T17:53:19.956Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-08-28T17:53:19.962Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-08-28T17:53:19.962Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Strict mode is enabled, find Locator with //div[@class=\"block block-category-navigation\"]//div[@class=\"listbox\"]//li//a[contains(text(), \"Books\")] in page."}
+{"level":30,"time":"2026-08-28T17:53:20.636Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"End of node method click"}
+{"level":30,"time":"2026-08-28T17:53:20.645Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-08-28T17:53:20.646Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Strict mode is enabled, find Locator with (//div[@class=\"product-grid\"]//div[2]//h2//a[contains(text(), \"Computing and Internet\")])[1] in page."}
+{"level":30,"time":"2026-08-28T17:53:21.441Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"End of node method click"}
+{"level":30,"time":"2026-08-28T17:53:21.445Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-08-28T17:53:21.445Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Strict mode is enabled, find Locator with //input[@class=\"qty-input\"] in page."}
+{"level":30,"time":"2026-08-28T17:53:21.467Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"End of node method fillText"}
+{"level":30,"time":"2026-08-28T17:53:21.470Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-08-28T17:53:21.470Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Strict mode is enabled, find Locator with //div[@class=\"overview\"]//input[@type=\"button\" and @value=\"Add to cart\"] in page."}
+{"level":30,"time":"2026-08-28T17:53:21.509Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"End of node method click"}
+{"level":30,"time":"2026-08-28T17:53:21.511Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Start of node method getText"}
+{"level":30,"time":"2026-08-28T17:53:21.511Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Strict mode is enabled, find Locator with //div[@id=\"bar-notification\"]/p[@class=\"content\"] in page."}
+{"level":30,"time":"2026-08-28T17:53:22.319Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Retrieved text for element //div[@id=\"bar-notification\"]/p[@class=\"content\"] containing The product has been added to your shopping cart"}
+{"level":30,"time":"2026-08-28T17:53:22.319Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"End of node method getText"}
+{"level":30,"time":"2026-08-28T17:53:22.323Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-08-28T17:53:22.323Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Strict mode is enabled, find Locator with //div[@id=\"bar-notification\"]/p[@class=\"content\"] in page."}
+{"level":30,"time":"2026-08-28T17:53:22.325Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-08-28T17:53:22.329Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-08-28T17:53:22.329Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Strict mode is enabled, find Locator with //li[@id='topcartlink']//span[@class='cart-label'] in page."}
+{"level":30,"time":"2026-08-28T17:53:23.077Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"End of node method click"}
+{"level":30,"time":"2026-08-28T17:53:23.084Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-08-28T17:53:23.084Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Strict mode is enabled, find Locator with //td[@class='product']//a[@class=\"product-name\" and contains(text(), \"Smartphone\")]/ancestor::tr//input[@type='checkbox'] in page."}
+{"level":30,"time":"2026-08-28T17:53:23.110Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-08-28T17:53:23.112Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-08-28T17:53:23.112Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Strict mode is enabled, find Locator with //td[@class='product']//a[@class=\"product-name\" and contains(text(), \"Smartphone\")]/ancestor::tr//input[@type='checkbox'] in page."}
+{"level":30,"time":"2026-08-28T17:53:23.140Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"End of node method click"}
+{"level":30,"time":"2026-08-28T17:53:23.143Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-08-28T17:53:23.143Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Strict mode is enabled, find Locator with //td[@class='product']//a[@class=\"product-name\" and contains(text(), \"Computing and Internet\")]/ancestor::tr//input[@type='checkbox'] in page."}
+{"level":30,"time":"2026-08-28T17:53:23.144Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-08-28T17:53:23.146Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-08-28T17:53:23.146Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Strict mode is enabled, find Locator with //td[@class='product']//a[@class=\"product-name\" and contains(text(), \"Computing and Internet\")]/ancestor::tr//input[@type='checkbox'] in page."}
+{"level":30,"time":"2026-08-28T17:53:23.357Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"End of node method click"}
+{"level":30,"time":"2026-08-28T17:53:23.358Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-08-28T17:53:23.358Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Strict mode is enabled, find Locator with //input[@name=\"updatecart\"] in page."}
+{"level":30,"time":"2026-08-28T17:53:23.998Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"End of node method click"}
+{"level":30,"time":"2026-08-28T17:53:24.005Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-08-28T17:53:24.005Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Strict mode is enabled, find Locator with //div[@class=\"order-summary-content\"] in page."}
+{"level":30,"time":"2026-08-28T17:53:24.029Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-08-28T17:53:24.031Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Start of node method getText"}
+{"level":30,"time":"2026-08-28T17:53:24.031Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Strict mode is enabled, find Locator with //div[@class=\"order-summary-content\"] in page."}
+{"level":30,"time":"2026-08-28T17:53:24.043Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Retrieved text for element //div[@class=\"order-summary-content\"] containing Your Shopping Cart is empty!"}
+{"level":30,"time":"2026-08-28T17:53:24.043Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"End of node method getText"}
+{"level":30,"time":"2026-08-28T17:53:24.050Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2026-08-28T17:53:24.050Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","Take screenshot with options: ":{"path":"/Users/joaolima/Documents/TA-Tricents/WebShopTricentsAutomation/results/browser/screenshot/robotframework-browser-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2026-08-28T17:53:24.672Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2026-08-28T17:53:24.685Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-08-28T17:53:24.686Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-08-28T17:53:24.687Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-08-28T17:53:24.688Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-08-28T17:53:24.689Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-08-28T17:53:24.689Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-08-28T17:53:24.691Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-08-28T17:53:24.692Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-08-28T17:53:24.693Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Changed active context: context=737209f6-d43e-4583-93d0-d3b8330cac34"}
+{"level":30,"time":"2026-08-28T17:53:24.693Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Changing current active page: page=a005dc7d-4f05-4414-a617-601afcb6cfb5"}
+{"level":30,"time":"2026-08-28T17:53:24.693Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Changed active page"}
+{"level":30,"time":"2026-08-28T17:53:24.705Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Start of node method closeContext"}
+{"level":30,"time":"2026-08-28T17:53:24.722Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Removed page=1f648c36-7505-41b5-a5ab-b292a2e117f9 from context=737209f6-d43e-4583-93d0-d3b8330cac34 page stack"}
+{"level":30,"time":"2026-08-28T17:53:24.763Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"End of node method closeContext"}
+{"level":30,"time":"2026-08-28T17:53:24.768Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-08-28T17:53:24.768Z","pid":51769,"hostname":"MacBook-Air-de-Rethink.local","msg":"End of node method getBrowserCatalog"}
