@@ -50,4 +50,6 @@ Remover itens do carrinho
 
     Validar Texto no Elemento    ${tela_carrinho.text_carrinho_vazio}    Your Shopping Cart is empty!
         
+Continuo comprando
     
+    Click    ${tela_carrinho.button_continue_shop}
