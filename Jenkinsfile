@@ -3,6 +3,7 @@ pipeline {
 
     environment {
         PATH = "/usr/local/bin:/usr/bin:/bin:${env.PATH}"
+        HEADLESS = "true"
     }
 
     stages {
@@ -20,18 +21,8 @@ pipeline {
         stage('Install Browsers') {
             steps {
                 sh '''
-                    echo "Node:"
                     node --version
-
-                    echo "NPM:"
                     npm --version
-
-                    echo "Node path:"
-                    which node
-
-                    echo "NPM path:"
-                    which npm
-
                     .venv/bin/rfbrowser init
                 '''
             }
