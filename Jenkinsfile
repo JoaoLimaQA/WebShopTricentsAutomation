@@ -1,22 +1,11 @@
 pipeline {
     agent any
 
+    environment {
+        PATH = "/usr/local/bin:/usr/bin:/bin:${env.PATH}"
+    }
+
     stages {
-
-        stage('Check Environment') {
-            steps {
-                sh '''
-                    echo "=== Python ==="
-                    python3 --version
-
-                    echo "=== Pip ==="
-                    python3 -m pip --version
-
-                    echo "=== Git ==="
-                    git --version
-                '''
-            }
-        }
 
         stage('Python Dependencies') {
             steps {
@@ -31,6 +20,18 @@ pipeline {
         stage('Install Browsers') {
             steps {
                 sh '''
+                    echo "Node:"
+                    node --version
+
+                    echo "NPM:"
+                    npm --version
+
+                    echo "Node path:"
+                    which node
+
+                    echo "NPM path:"
+                    which npm
+
                     .venv/bin/rfbrowser init
                 '''
             }
