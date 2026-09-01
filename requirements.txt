@@ -4,3 +4,4 @@ robotframework-browser
 robotframework-pythonlibcore    
 webdriver-manager
 allure-robotframework
+robotframework-faker 

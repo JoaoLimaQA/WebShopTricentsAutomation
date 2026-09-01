@@ -2,31 +2,40 @@ pipeline {
     agent any
 
     stages {
-        stage('Node.js Dependecies') {
-            steps {
-                sh 'pip install -r requirements.txt'
+        stage('Check Environment') {
+    steps {
+        sh '''
+            echo "PATH:"
+            echo $PATH
 
-            }
-        }
-        stage('Install Browsers') {
-            steps {
-                sh 'rfbrowser init'
-            }
-        }
-         stage('Autmoation Tests') {
-            steps {
-                sh 'robot tests/'
-            }
-        }
-         stage('Deploy') {
-            steps {
-                echo 'Publicando Versão no ambiente de QA'
-            }
-        }
-        stage('Pronto para Produção') {
-            steps {
-                echo 'Gerando novo pacote para produção'
-            }
-        }
+            echo "Python:"
+            python3 --version || true
+
+            echo "Pip:"
+            pip3 --version || true
+
+            echo "Robot:"
+            robot --version || true
+
+            echo "Git:"
+            git --version
+        '''
     }
 }
+//        stage('Node.js Dependecies') {
+//            steps {
+//                sh 'pip install -r requirements.txt'
+//
+//            }
+//        }
+//        stage('Install Browsers') {
+//            steps {
+//                sh 'rfbrowser init'
+//            }
+//        }
+//         stage('Autmoation Tests') {
+//            steps {
+//                sh 'robot tests/'
+//            }
+//    }
+//}
