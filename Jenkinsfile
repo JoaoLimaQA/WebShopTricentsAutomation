@@ -2,41 +2,46 @@ pipeline {
     agent any
 
     stages {
+
         stage('Check Environment') {
-    steps {
-        sh '''
-            echo "PATH:"
-            echo $PATH
+            steps {
+                sh '''
+                    echo "=== Python ==="
+                    python3 --version
 
-            echo "Python:"
-            python3 --version || true
+                    echo "=== Pip ==="
+                    python3 -m pip --version
 
-            echo "Pip:"
-            pip3 --version || true
+                    echo "=== Git ==="
+                    git --version
+                '''
+            }
+        }
 
-            echo "Robot:"
-            robot --version || true
+        stage('Python Dependencies') {
+            steps {
+                sh '''
+                    python3 -m venv .venv
+                    .venv/bin/python -m pip install --upgrade pip
+                    .venv/bin/pip install -r requirements.txt
+                '''
+            }
+        }
 
-            echo "Git:"
-            git --version
-        '''
+        stage('Install Browsers') {
+            steps {
+                sh '''
+                    .venv/bin/rfbrowser init
+                '''
+            }
+        }
+
+        stage('Automation Tests') {
+            steps {
+                sh '''
+                    .venv/bin/robot tests/
+                '''
+            }
+        }
     }
 }
-//        stage('Node.js Dependecies') {
-//            steps {
-//                sh 'pip install -r requirements.txt'
-//
-//            }
-//        }
-//        stage('Install Browsers') {
-//            steps {
-//                sh 'rfbrowser init'
-//            }
-//        }
-//         stage('Autmoation Tests') {
-//            steps {
-//                sh 'robot tests/'
-//            }
-//    }
-//}
-//
